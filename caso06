@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Caso06 {
+
+	public static void main(String[] args) {
+//	Escribir un programa que pida un número entero y escriba por pantalla
+//	dependiendo del valor del número: 
+//	“El número introducido es < valor número >”, en el caso de que sea positivo.
+//	“El número introducido es NEGATIVO”, en el caso de que sea negativo.
+
+		// Zona declarativa
+		int numeroUsuario;
+		Scanner teclado = new Scanner(System.in);
+
+		System.out.println("Escribe un número entero. ");
+		numeroUsuario = teclado.nextInt();
+
+		if (numeroUsuario >= 0) {
+			System.out.println("El número introducido es: " + numeroUsuario);
+
+		} else {
+			System.err.println("El número introducido es NEGATIVO. ");
+		}
+
+	}
+
+}
